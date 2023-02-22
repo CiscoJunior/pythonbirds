@@ -1,5 +1,5 @@
 class Pessoa:
-    def __int__(self, nome=None, idade = 36):
+    def __init__(self, nome=None, idade = 36):
         self.idade = idade
         self.nome = nome
 
@@ -8,7 +8,7 @@ class Pessoa:
 
 
 if __name__ == '__main__':
-    p = Pessoa()
+    p = Pessoa('Luciano')
     print(Pessoa.cumprimentar(p))
     print(id(p))
     print(p.cumprimentar())
@@ -16,8 +16,5 @@ if __name__ == '__main__':
     p.nome = 'Renzo'
     print(p.nome)
     print(p.idade)
-
-
-
 
 
